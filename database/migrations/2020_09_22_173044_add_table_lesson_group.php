@@ -6,7 +6,7 @@ use Illuminate\Support\Facades\Schema;
 
 class AddTableLessonGroup extends Migration
 {
-    public $tableName = 'lesson_group';
+    public $tableName = 'lesson_groups';
 
     /**
      * Run the migrations.
@@ -17,8 +17,8 @@ class AddTableLessonGroup extends Migration
     {
         Schema::create($this->tableName, function (Blueprint $table) {
             $table->id();
-            $table->foreignId('course_group_id')->constrained(); // если использовать такой синтаксис, то таблица Курсы должна называться groups
-            $table->foreignId('lesson_id')->constrained(); // если использовать такой синтаксис, то таблица Курсы должна называться lessons
+            $table->foreignId('course_group_id')->comment('Идентификатор группы')->constrained();
+            $table->foreignId('lesson_id')->comment('Идентификатор урока')->constrained();
             $table->dateTime('time_start')->nullable(false)->comment('Время начала урока');
             $table->unsignedBigInteger('teacher_id')->nullable(false)->comment('Идентификатор учителя');
             $table->foreign('teacher_id')->references('id')->on('users'); // используем этот синтаксис, т.к. имя таблицы не teachers

@@ -17,7 +17,7 @@ class AddTableLesson extends Migration
     {
         Schema::create($this->tableName, function (Blueprint $table) {
             $table->id();
-            $table->foreignId('course_id')->constrained(); // если использовать такой синтаксис, то таблица Курсы должна называться courses
+            $table->foreignId('course_id')->comment('Идентификатор курса')->constrained();
             $table->string('name', 150)->nullable(false)->comment('Идентификатор курса');
             $table->text('description')->nullable(true)->comment('Текстовое описание урока');
             $table->unsignedSmallInteger('duration_minutes')->nullable(false)->comment('Продолжительность урока в минутах');

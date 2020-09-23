@@ -24,7 +24,7 @@ class AddTableCourseGroup extends Migration
 
 //            $table->unsignedBigInteger('course_id')->nullable(false)->comment('Идентификатор курса');
 //            $table->foreign('course_id')->references('id')->on('courses');
-            $table->foreignId('course_id')->constrained(); // если использовать такой синтаксис, то таблица Курсы должна называться courses
+            $table->foreignId('course_id')->comment('Идентификатор курса')->constrained();
         });
 
     }

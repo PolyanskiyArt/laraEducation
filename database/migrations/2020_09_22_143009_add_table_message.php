@@ -17,12 +17,14 @@ class AddTableMessage extends Migration
     {
         Schema::create($this->tableName, function (Blueprint $table) {
             $table->id();
-            $table->bigInteger('from_user_id')->nullable(false);
-            $table->bigInteger('to_user_id')->nullable(false);
-            $table->text('text')->nullable(false);
-            $table->boolean('is_new')->nullable(false)->default(true);
-            $table->unsignedSmallInteger('important_state')->default(1);
-            $table->dateTime('created_at', 0)->nullable(false);
+            $table->bigInteger('from_user_id')->nullable(false)->comment('Отправитель сообщения');
+            $table->foreign('from_user_id')->references('id')->on('users');
+            $table->bigInteger('to_user_id')->nullable(false)->comment('Получатель сообщения');
+            $table->foreign('to_user_id')->references('id')->on('users');
+            $table->text('text')->nullable(false)->comment('Текст сообщения');
+            $table->boolean('is_new')->nullable(false)->default(true)->comment('true, если сообщение не прочитано получателем');
+            $table->unsignedSmallInteger('important_state')->default(1)->comment('важность от 1 до 3');
+            $table->dateTime('created_at', 0)->nullable(false)->comment('Время создания сообщения');
         });
     }
 
