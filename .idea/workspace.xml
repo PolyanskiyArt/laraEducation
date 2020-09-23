@@ -1,18 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="aa07c406-ede8-4ff4-aa56-0f21f1e3cd79" name="Default Changelist" comment="Создание таблиц">
-      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/database/migrations/2020_09_23_020747_add_table_payment.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/database/migrations/2020_09_23_023230_add_table_student_progress.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/database/migrations/2020_09_23_023908_add_table_teacher_profile.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/blog.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/blog.iml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/php.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/php.xml" afterDir="false" />
+    <list default="true" id="aa07c406-ede8-4ff4-aa56-0f21f1e3cd79" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/database/migrations/2020_09_22_143009_add_table_message.php" beforeDir="false" afterPath="$PROJECT_DIR$/database/migrations/2020_09_22_143009_add_table_message.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/database/migrations/2020_09_22_162143_add_table_course_group.php" beforeDir="false" afterPath="$PROJECT_DIR$/database/migrations/2020_09_22_162143_add_table_course_group.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/database/migrations/2020_09_22_165517_add_table_lesson.php" beforeDir="false" afterPath="$PROJECT_DIR$/database/migrations/2020_09_22_165517_add_table_lesson.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/database/migrations/2020_09_22_173044_add_table_lesson_group.php" beforeDir="false" afterPath="$PROJECT_DIR$/database/migrations/2020_09_22_173044_add_table_lesson_group.php" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -188,7 +178,7 @@
       <option name="presentableId" value="Default" />
       <updated>1600713089493</updated>
       <workItem from="1600713090566" duration="1133000" />
-      <workItem from="1600784402721" duration="15676000" />
+      <workItem from="1600784402721" duration="16580000" />
     </task>
     <task id="LOCAL-00001" summary="Создание таблиц">
       <created>1600797408858</created>
@@ -197,7 +187,14 @@
       <option name="project" value="LOCAL" />
       <updated>1600797408858</updated>
     </task>
-    <option name="localTasksCounter" value="2" />
+    <task id="LOCAL-00002" summary="Создание таблиц">
+      <created>1600830459049</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1600830459049</updated>
+    </task>
+    <option name="localTasksCounter" value="3" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -209,10 +206,10 @@
     <option name="LAST_COMMIT_MESSAGE" value="Создание таблиц" />
   </component>
   <component name="WindowStateProjectService">
-    <state x="585" y="19" key="CommitChangelistDialog2" timestamp="1600830305487">
+    <state x="585" y="19" key="CommitChangelistDialog2" timestamp="1600830456854">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state x="585" y="19" key="CommitChangelistDialog2/0.0.1920.1040@0.0.1920.1040" timestamp="1600830305487" />
+    <state x="585" y="19" key="CommitChangelistDialog2/0.0.1920.1040@0.0.1920.1040" timestamp="1600830456854" />
     <state x="740" y="274" key="FileChooserDialogImpl" timestamp="1600784399912">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
@@ -237,6 +234,10 @@
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state x="461" y="164" key="SettingsEditor/0.0.1920.1040@0.0.1920.1040" timestamp="1600830410703" />
+    <state x="552" y="234" key="Vcs.Push.Dialog.v2" timestamp="1600830473977">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state x="552" y="234" key="Vcs.Push.Dialog.v2/0.0.1920.1040@0.0.1920.1040" timestamp="1600830473977" />
     <state x="767" y="429" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2" timestamp="1600757081103">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
