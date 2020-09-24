@@ -17,9 +17,9 @@ class AddTableMessage extends Migration
     {
         Schema::create($this->tableName, function (Blueprint $table) {
             $table->id();
-            $table->bigInteger('from_user_id')->nullable(false)->comment('Отправитель сообщения');
+            $table->unsignedBigInteger('from_user_id')->nullable(false)->comment('Отправитель сообщения');
             $table->foreign('from_user_id')->references('id')->on('users');
-            $table->bigInteger('to_user_id')->nullable(false)->comment('Получатель сообщения');
+            $table->unsignedBigInteger('to_user_id')->nullable(false)->comment('Получатель сообщения');
             $table->foreign('to_user_id')->references('id')->on('users');
             $table->text('text')->nullable(false)->comment('Текст сообщения');
             $table->boolean('is_new')->nullable(false)->default(true)->comment('true, если сообщение не прочитано получателем');
