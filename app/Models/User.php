@@ -20,6 +20,16 @@ class User extends Authenticatable
     use TwoFactorAuthenticatable;
 
     /**
+     * Роль - гость, зарегистрированный пользователь (студент), преподаватель, менеджер, администратор
+     * TINYINT UNSIGNED
+     */
+    const ROLE_GUEST   = 0b00000000;
+    const ROLE_USER    = 0b00000001;
+    const ROLE_TEACHER = 0b00000010;
+    const ROLE_MANAGER = 0b00000100;
+    const ROLE_ADMIN   = 0b10000000;
+
+    /**
      * The attributes that are mass assignable.
      *
      * @var array
